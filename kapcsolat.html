@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Contact</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="front">
+		<div class="actual-page">Contact</div></br>
+		<div class="menu">
+			<button class="gomb" id="gomb1" onmouseenter="changeButtonColor1('black','rgb(255,100,0)')" 
+			onmouseleave="changeButtonColor1('black','rgb(150,200,50)')" onclick="progHiv1()" >Main Page</button></br>
+			<button class="gomb" id="gomb2" onmouseenter="changeButtonColor2('black','rgb(255,100,0)')" 
+			onmouseleave="changeButtonColor2('black','rgb(150,200,50)')" onclick="progHiv2()">Services</button></br>
+			<button class="gomb" id="gomb4" onmouseenter="changeButtonColor4('black','rgb(255,100,0)')" 
+			onmouseleave="changeButtonColor4('black','rgb(150,200,50)')" onclick="progHiv4()">Contact</button></br>
+		</div>
+	</div>
+	<div class="content">
+		<div class="intro">
+			Don’t hesitate to reach out via phone or email if you have any questions or need more details.
+		</div>
+		<div class="kapcsolat">
+			<div class="kepkapcs">
+				<img src="en.jpeg" height="375px" width="300px">
+			</div>
+			<div class="leiras0">
+				Founder: Gergő Tóth</br></br>
+				Phone number: 0630/2775197</br></br>
+				E-mail: gtoth0714@gmail.com</br></br>
+			</div>
+		</div>
+		<div class="leiras6">
+			<b>Here’s the workflow we follow to ensure a successful outcome:</b><br/>
+			<ul>
+			  <li>At the start of the planning phase, we clarify all your needs and expectations <br>via phone or email. For larger web applications, in-person consultations are also available. This phase is completely free of charge.</li>
+			  
+			  <li>Once the first prototype is ready, we review it together and discuss the next <br>development steps. At this point, I can provide a detailed price estimate.</li>
+			  
+			  <li>Depending on the size of the project, we go through 2 to 5 refinement rounds to get<br> closer to the final design. Once the application is complete, it will be published and made publicly accessible.</li>
+			  
+			  <li>If needed, I can help promote the finished website across various platforms.</li>
+			</ul>
+		</div>
+		<div style="text-align: center;">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1283.4342017545491!2d20.144586662688855!3d46.24183460534435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474488635c89dc95%3A0x38dac0afd3d72c99!2sSzeged%2C%20B%C3%A1nomkert%20sor%2016%2C%206725!5e1!3m2!1shu!2shu!4v1736191524874!5m2!1shu!2shu" width="500" height="400" style="border:20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</div>
+	<div class="labjegyzet">
+		Phone number: 0630/2775197</br></br>
+		E-mail: gtoth0714@gmail.com</br></br>
+		<button onclick="progHiv5()">Privacy Policy</button>
+	</div>
+	<script>
+		function changeButtonColor1(backgroundColor, textColor){
+			var button = document.getElementById("gomb1");
+			button.style.backgroundColor = backgroundColor;
+			button.style.color = textColor;
+		}
+		function changeButtonColor2(backgroundColor, textColor){
+			var button = document.getElementById("gomb2");
+			button.style.backgroundColor = backgroundColor;
+			button.style.color = textColor;
+		}
+		function changeButtonColor3(backgroundColor, textColor){
+			var button = document.getElementById("gomb3");
+			button.style.backgroundColor = backgroundColor;
+			button.style.color = textColor;
+		}
+		function changeButtonColor4(backgroundColor, textColor){
+			var button = document.getElementById("gomb4");
+			button.style.backgroundColor = backgroundColor;
+			button.style.color = textColor;
+		}
+		function progHiv1(){
+			window.location.href = 'index.html';
+		}
+		function progHiv2(){
+			window.location.href = 'Szolgaltatasok.html';
+		}
+		function progHiv3(){
+			window.location.href = 'referenciak.html';
+		}
+		function progHiv4(){
+			window.location.href = 'kapcsolat.html';
+		}
+		function progHiv5(){
+			window.location.href = 'tajekoztato.html';
+		}	
+	</script>
+</body>
+</html>

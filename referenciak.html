@@ -1,0 +1,83 @@
+<html lang='hu'>
+<head>
+	<meta charset="UTF-8">
+	<title>Referenciák</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="front">
+		<div class="actual-page">Referenciák</div></br>
+		<div class="menu">
+			<button class="gomb" id="gomb1" onmouseenter="changeButtonColor1('black','rgb(255,100,0)')" 
+			onmouseleave="changeButtonColor1('black','rgb(150,200,50)')" onclick="progHiv1()" >Főoldal</button></br>
+			<button class="gomb" id="gomb2" onmouseenter="changeButtonColor2('black','rgb(255,100,0)')" 
+			onmouseleave="changeButtonColor2('black','rgb(150,200,50)')" onclick="progHiv2()">Szolgáltatások</button></br>
+			<button class="gomb" id="gomb3" onmouseenter="changeButtonColor3('black','rgb(255,100,0)')" 
+			onmouseleave="changeButtonColor3('black','rgb(150,200,50)')" onclick="progHiv3()">Referenciamunkák</button></br>
+			<button class="gomb" id="gomb4" onmouseenter="changeButtonColor4('black','rgb(255,100,0)')" 
+			onmouseleave="changeButtonColor4('black','rgb(150,200,50)')" onclick="progHiv4()">Kapcsolat</button></br>
+		</div>
+	</div>
+	<div class="content">
+		<div class="intro">
+			Referenciamunkáink
+		</div>
+		<div style="text-align: center;">
+			<img src="bbwelding.jpg" height="300px" width="500px">
+		</div>
+		<div class="leiras1">
+			Ipari fémmegmunkálási projekteket vállaló cég egyszerű, jól átlátható weboldala.</br>
+			<a href="https://www.bbweldingteamkft.hu/">B+B Welding Team kft.</a>
+		</div>
+		<div style="text-align: center;">
+			<img src="ceges.jpg" height="300px" width="400px">
+		</div>
+		<div class="leiras2">
+			Egy cég belső használatú egyszerű, de nagyon hasznos webes alkalmazása, amivel egy rendszer hőeloszlása
+			szimulálható az idő függvényében. Az alkalmazás belső hálózaton van, így nem érhető el!
+		</div>
+	</div>
+	<div class="labjegyzet">
+		Telefonszám: 0630/2775197</br></br>
+		E-mail: gtoth0714@gmail.com</br></br>
+		<button onclick="progHiv5()">Adatvédelmi nyilatkozat</button>
+	</div>
+	<script>
+		function changeButtonColor1(backgroundColor, textColor){
+			var button = document.getElementById("gomb1");
+			button.style.backgroundColor = backgroundColor;
+			button.style.color = textColor;
+		}
+		function changeButtonColor2(backgroundColor, textColor){
+			var button = document.getElementById("gomb2");
+			button.style.backgroundColor = backgroundColor;
+			button.style.color = textColor;
+		}
+		function changeButtonColor3(backgroundColor, textColor){
+			var button = document.getElementById("gomb3");
+			button.style.backgroundColor = backgroundColor;
+			button.style.color = textColor;
+		}
+		function changeButtonColor4(backgroundColor, textColor){
+			var button = document.getElementById("gomb4");
+			button.style.backgroundColor = backgroundColor;
+			button.style.color = textColor;
+		}
+		function progHiv1(){
+			window.location.href = 'index.html';
+		}
+		function progHiv2(){
+			window.location.href = 'Szolgaltatasok.html';
+		}
+		function progHiv3(){
+			window.location.href = 'referenciak.html';
+		}
+		function progHiv4(){
+			window.location.href = 'kapcsolat.html';
+		}
+		function progHiv5(){
+			window.location.href = 'tajekoztato.html';
+		}
+	</script>
+</body>
+</html>

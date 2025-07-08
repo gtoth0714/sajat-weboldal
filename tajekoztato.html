@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Privacy Policy</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="front">
+		<div class="actual-page">Privacy Policy</div></br>
+		<div class="menu">
+			<button class="gomb" id="gomb1" onmouseenter="changeButtonColor1('black','rgb(255,100,0)')" 
+			onmouseleave="changeButtonColor1('black','rgb(150,200,50)')" onclick="progHiv1()" >Main Page</button></br>
+			<button class="gomb" id="gomb2" onmouseenter="changeButtonColor2('black','rgb(255,100,0)')" 
+			onmouseleave="changeButtonColor2('black','rgb(150,200,50)')" onclick="progHiv2()">Services</button></br>
+			<button class="gomb" id="gomb4" onmouseenter="changeButtonColor4('black','rgb(255,100,0)')" 
+			onmouseleave="changeButtonColor4('black','rgb(150,200,50)')" onclick="progHiv4()">Contact</button></br>
+		</div>
+	</div>
+	<div class="content">
+		<div class="intro">
+			PRIVACY POLICY:
+		</div>
+		<div class="leiras1">
+			<strong>I. INTRODUCTION:</strong><br/>
+			In accordance with the Electronic Commerce Act and GDPR regulations, we consider it important that visitors can easily access key information about the website operator and the hosting provider at any time.<br/><br/>
+			This website does not collect any personal data from its visitors.<br/><br/>
+			All images used on this website are royalty-free. The profile photo is original and self-made, while the other images have been sourced from <a href="https://unsplash.com" target="_blank">unsplash.com</a>.<br/><br/>
+		  </div>
+		<div class="leiras2">
+			<strong>II. WEBPAGE OPERATOR:</strong></br>
+			Name: Gergő Tóth</br>
+			Phone number: +36 30 277 5197</br></br>
+		</div>
+		<div class="leiras7">
+			<strong>III. WEB HOSTING PROVIDER:</strong></br>
+			Web hosting provider: Rackhost Informatikai Zrt. (Private Company Limited by Shares)</br>
+			Address: 6722 Szeged, Tisza Lajos körút 41.</br>
+			Tax number: 25333572206.</br>
+			Phone number: +36 1 445 1200</br></br>
+		</div>
+	</div>
+	<div class="labjegyzet">
+		Phone number: 0630/2775197</br></br>
+		E-mail: gtoth0714@gmail.com</br></br>
+		<button onclick="progHiv5()">Privacy Policy</button>
+	</div>
+	<script>
+		function changeButtonColor1(backgroundColor, textColor){
+			var button = document.getElementById("gomb1");
+			button.style.backgroundColor = backgroundColor;
+			button.style.color = textColor;
+		}
+		function changeButtonColor2(backgroundColor, textColor){
+			var button = document.getElementById("gomb2");
+			button.style.backgroundColor = backgroundColor;
+			button.style.color = textColor;
+		}
+		function changeButtonColor3(backgroundColor, textColor){
+			var button = document.getElementById("gomb3");
+			button.style.backgroundColor = backgroundColor;
+			button.style.color = textColor;
+		}
+		function changeButtonColor4(backgroundColor, textColor){
+			var button = document.getElementById("gomb4");
+			button.style.backgroundColor = backgroundColor;
+			button.style.color = textColor;
+		}
+		function progHiv1(){
+			window.location.href = 'index.html';
+		}
+		function progHiv2(){
+			window.location.href = 'Szolgaltatasok.html';
+		}
+		function progHiv3(){
+			window.location.href = 'referenciak.html';
+		}
+		function progHiv4(){
+			window.location.href = 'kapcsolat.html';
+		}
+		function progHiv5(){
+			window.location.href = 'tajekoztato.html';
+		}		
+	</script>
+</body>
+</html>

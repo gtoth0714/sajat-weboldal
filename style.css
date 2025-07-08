@@ -1,0 +1,213 @@
+body {
+	background-color: rgb(140, 140, 140);
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.front {
+	background:
+	linear-gradient(
+		rgba(0,0,0,0.15),
+		rgba(0,0,0,0.15)
+	),
+	url('Codes.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.actual-page {
+	color: rgb(150,200,50);
+	font-size: 50px;
+}
+.menu {
+	text-align: center;
+}
+.gomb {
+	background-color: black;
+	margin: 10px;
+	color: rgb(150, 200, 50);
+	border-radius: 25%;
+	font-size: 20px;
+	padding: 10px;
+}
+.content {
+	background:
+	linear-gradient(
+		rgba(170, 170, 170, 0.55),
+		rgba(170, 170, 170, 0.55)
+	),
+	/*url('ElectricCircuit.jpg');
+	background-repeat: no-repeat*/;
+	background-position: center;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.intro {
+	font-size: 40px;
+	padding: 5px;
+	color: black;
+}
+.leiras1 {
+	text-align: center;
+	font-size: 30px;
+	background-color: rgb(130, 156, 130);
+	color: black;
+	margin: 10px;
+	border-radius: 10%;
+}
+.leiras2 {
+	text-align: center;
+	font-size: 30px;
+	background-color: rgb(130, 156, 130);
+	color: black;
+	margin: 10px;
+	border-radius: 10%;
+}
+.pict0 {
+	max-width: 450px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+.pict1 {
+	max-width: 450px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+.labjegyzet {
+	background-color: black;
+	color: white;
+	padding: 20px;
+	margin: 0;
+}
+.leiras3 {
+	text-align: center;
+	list-style-position: inside;
+	font-size: 25px;
+	background-color: rgb(130, 156, 130);
+	color: black;
+	margin: 10px;
+	border-radius: 10%;
+	padding: 20px;
+}
+.leiras4 {
+	list-style-position: inside;
+	text-align: center;
+	font-size: 25px;
+	background-color: rgb(130, 156, 130);
+	color: black;
+	margin: 10px;
+	border-radius: 10%;
+	padding: 20px;
+}
+.leiras5 {
+	display: block;
+	width: max-content;
+	text-align: center;
+	font-size: 25px;
+	background-color: rgb(130, 156, 130);
+	color: black;
+	margin: 10px auto;
+	border-radius: 10%;
+	padding: 20px;
+}
+.leiras6 {
+	text-align: left;
+	font-size: 25px;
+	background-color: rgb(130, 156, 130);
+	color: black;
+	margin: 10px auto;
+	border-radius: 10%;
+	padding: 20px;
+}
+.leiras7 {
+	text-align: center;
+	font-size: 30px;
+	background-color: rgb(130, 156, 130);
+	color: black;
+	margin: 10px;
+	border-radius: 10%;
+}
+.leiras0 {
+	display: inline-block;
+	text-align: left;
+	font-size: 25px;
+	background-color: rgb(130, 156, 130);
+	color: black;
+	margin: 10px;
+	border-radius: 10%;
+	padding: 20px;
+}
+.kapcsolat {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	gap: 20px;
+}
+.kepkapcs {
+	padding-right: 10px;
+}
+.leiras {
+	color: black;
+	font-size: 30px;
+	padding-left: 10px;
+}
+ul {
+	padding: 0 0 0 1.5em;
+	margin: 0;
+}
+@media screen and (max-width: 768px) {
+	.actual-page {
+		text-align: center;
+	}
+	.kapcsolat {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 20px;
+	}
+	.pict0 {
+		max-width: 300px;
+	}
+	.pict1 {
+		max-width: 300px;
+	}
+	.leiras0 {
+		text-align: center;
+		font-size: 20px;
+		color: black;
+		margin: 10px;
+	}
+	.leiras1 {
+		font-size: 20px;
+	}
+	.leiras2 {
+		font-size: 20px;
+	}
+	.leiras3 {
+		font-size: 20px;
+	}
+	.leiras4 {
+		font-size: 20px;
+	}
+	.leiras5 {
+		font-size: 20px;
+	}
+	.leiras7{
+		font-size: 20px;
+	}
+	.kepkapcs {
+		text-align: center;
+	}
+	.intro {
+		font-size: 25px;
+		padding: 5px;
+		text-align: center;
+	}
+}

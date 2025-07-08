@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Services</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="front">
+		<div class="actual-page">Services</div></br>
+		<div class="menu">
+			<button class="gomb" id="gomb1" onmouseenter="changeButtonColor1('black','rgb(255,100,0)')" 
+			onmouseleave="changeButtonColor1('black','rgb(150,200,50)')" onclick="progHiv1()" >Main Page</button></br>
+			<button class="gomb" id="gomb2" onmouseenter="changeButtonColor2('black','rgb(255,100,0)')" 
+			onmouseleave="changeButtonColor2('black','rgb(150,200,50)')" onclick="progHiv2()">Services</button></br>
+			<button class="gomb" id="gomb4" onmouseenter="changeButtonColor4('black','rgb(255,100,0)')" 
+			onmouseleave="changeButtonColor4('black','rgb(150,200,50)')" onclick="progHiv4()">Contact</button></br>
+		</div>
+	</div>
+	<div class="content">
+		<div class="intro">
+			I offer these services with expert knowledge, precision, and a reliable professional background.
+		</div>
+		<div>
+			<img src="webdesign2.jpg" class="pict1">
+		</div>
+		<div class="leiras3">
+			<b>Fully custom web design tailored to your needs.</b><br><br>
+			<ul>
+				<li>Polished, responsive design across desktop, laptop, tablet, and mobile devices.</li>
+				<li>Personalized advertising, photos, and graphic elements tailored to your brand.</li>
+				<li>Custom development of database-driven web applications.</li>
+				<li>Maximum data security and protection.</li>
+				<li>Fast performance and optimized loading times.</li>
+				<li>Ongoing maintenance and reliability guarantee.</li>
+			  </ul>
+		</div>
+		<div>
+			<img src="Factorydesign.jpg" class="pict1">
+		</div>
+		<div class="leiras4">
+			<b>I also develop custom web applications for businesses!</b><br><br>
+			<ul>
+			  <li>Simple, fast, and high-quality web-based applications.</li>
+			  <li>Internal management systems tailored for company networks.</li>
+			  <li>Fully customized, browser-based business solutions.</li>
+			  <li>Ongoing maintenance and quality assurance included.</li>
+			</ul>
+		</div>
+	</div>
+	<div class="labjegyzet">
+		Phone number: 0630/2775197</br></br>
+		E-mail: gtoth0714@gmail.com</br></br>
+		<button onclick="progHiv5()">Privacy Policy</button>
+	</div>
+	<script>
+		function changeButtonColor1(backgroundColor, textColor){
+			var button = document.getElementById("gomb1");
+			button.style.backgroundColor = backgroundColor;
+			button.style.color = textColor;
+		}
+		function changeButtonColor2(backgroundColor, textColor){
+			var button = document.getElementById("gomb2");
+			button.style.backgroundColor = backgroundColor;
+			button.style.color = textColor;
+		}
+		function changeButtonColor3(backgroundColor, textColor){
+			var button = document.getElementById("gomb3");
+			button.style.backgroundColor = backgroundColor;
+			button.style.color = textColor;
+		}
+		function changeButtonColor4(backgroundColor, textColor){
+			var button = document.getElementById("gomb4");
+			button.style.backgroundColor = backgroundColor;
+			button.style.color = textColor;
+		}
+		function progHiv1(){
+			window.location.href = 'index.html';
+		}
+		function progHiv2(){
+			window.location.href = 'Szolgaltatasok.html';
+		}
+		function progHiv3(){
+			window.location.href = 'referenciak.html';
+		}
+		function progHiv4(){
+			window.location.href = 'kapcsolat.html';
+		}
+		function progHiv5(){
+			window.location.href = 'tajekoztato.html';
+		}
+	</script>
+</body>
+</html>
