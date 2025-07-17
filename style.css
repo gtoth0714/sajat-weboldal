@@ -168,7 +168,7 @@ ul {
 	width: 100%;
 	padding-bottom: 30%; /* arány megtartása (4:3) */
 	height: 0;
-	overflow: hidden;
+	overflow-x: hidden;
 	border: 10px solid #ccc; /* ha kell keret */
 	border-radius: 8px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.1);
