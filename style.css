@@ -231,6 +231,9 @@ ul {
 		padding: 5px;
 		text-align: center;
 	}
+	.map-container {
+		padding-bottom: 50%;
+	}
 }
 body {
 	overflow: hidden;
