@@ -3,7 +3,6 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	overflow-x: hidden;
 }
 .front {
 	background:
@@ -47,6 +46,7 @@ body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	max-width: 100%;
 }
 .intro {
 	font-size: 40px;
@@ -231,4 +231,7 @@ ul {
 		padding: 5px;
 		text-align: center;
 	}
+}
+body {
+	overflow: hidden;
 }
