@@ -3,6 +3,8 @@ body,html {
 	margin: 0;
 	padding: 0;
 	min-height: 100vh;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 .front {
 	background:
@@ -166,11 +168,14 @@ ul {
 .map-container {
 	position: relative;
 	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
 	padding-bottom: 30%; /* arány megtartása (4:3) */
 	height: 0;
 	border: 10px solid #ccc; /* ha kell keret */
 	border-radius: 8px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	box-sizing: border-box;
   }
   
 .map-container iframe {
@@ -178,7 +183,9 @@ ul {
 	top: 0;
 	left: 0;
 	width: 100%;
+	max-width: 100%;
 	height: 100%;
+	box-sizing: border-box;
 	border: 0;
   }
   
