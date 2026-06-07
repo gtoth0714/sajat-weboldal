@@ -1,92 +1,75 @@
 <!DOCTYPE html>
+<html lang="hu">
 <head>
 	<meta charset="UTF-8">
 	<title>Főoldal</title>
 	<link rel="stylesheet" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-	<header class="sidebar">
-  		<div class="logo">Tóth Gergő</div>
 
-  		<nav class="menu">
-    		<a href="index.html" class="nav-btn">Főoldal</a>
-    		<a href="Szolgaltatasok.html" class="nav-btn">Szolgáltatások</a>
-    		<a href="kapcsolat.html" class="nav-btn">Kapcsolat</a>
-  		</nav>
-	</header>
-	<main class="content">
+<header class="sidebar">
+  <div class="logo">Tóth Gergő</div>
 
-  		<section class="hero">
-    		<h1>
-      			Minőségügyi folyamatok + szoftverrendszerek<br>
-      			cégek számára
-    		</h1>
-    		<p>
-      			Segítek a vállalatoknak folyamataikat automatizált, skálázható digitális rendszerekké alakítani.
-    		</p>
-  		</section>
+  <nav class="menu">
+    <a href="index.html" class="nav-btn active">Főoldal</a>
+    <a href="Szolgaltatasok.html" class="nav-btn">Szolgáltatások</a>
+    <a href="kapcsolat.html" class="nav-btn">Kapcsolat</a>
+  </nav>
+</header>
 
-  		<section class="card">
-    		<img src="webdesign.jpg">
-    		<div>
-      			<h2>Minőségügy + automatizáció</h2>
-      			<p>Folyamatok, amik stabilan működnek és szoftverek, amik automatizálják őket.</p>
-    		</div>
-  		</section>
+<main class="content">
 
-  		<section class="card">
-    		<img src="Marketing.jpg">
-    		<div>
-      			<h2>Webalkalmazások & digitális termékek</h2>
-      			<p>Egyedi weboldalak és alkalmazások IT és üzleti fókuszban.</p>
-    		</div>
-  		</section>
+  <section class="hero">
+    <h1>
+      Minőségügyi folyamatok és szoftverrendszerek<br>
+      vállalatok számára
+    </h1>
 
-  		<footer class="footer">
-    		<p>Név: Tóth Gergő</p>
-    		<p>Email: gtoth0714@gmail.com</p>
-    		<p>Telefon: 0630/2775197</p>
-    		<button onclick="location.href='tajekoztato.html'">Privacy Policy</button>
-  		</footer>
+    <p>
+      Segítek cégeknek folyamataikat hatékony, automatizált és skálázható digitális rendszerekké alakítani.
+    </p>
 
-	</main>
-	<script>
-		function changeButtonColor1(backgroundColor, textColor){
-			var button = document.getElementById("gomb1");
-			button.style.backgroundColor = backgroundColor;
-			button.style.color = textColor;
-		}
-		function changeButtonColor2(backgroundColor, textColor){
-			var button = document.getElementById("gomb2");
-			button.style.backgroundColor = backgroundColor;
-			button.style.color = textColor;
-		}
-		function changeButtonColor3(backgroundColor, textColor){
-			var button = document.getElementById("gomb3");
-			button.style.backgroundColor = backgroundColor;
-			button.style.color = textColor;
-		}
-		function changeButtonColor4(backgroundColor, textColor){
-			var button = document.getElementById("gomb4");
-			button.style.backgroundColor = backgroundColor;
-			button.style.color = textColor;
-		}
-		function progHiv1(){
-			window.location.href = 'index.html';
-		}
-		function progHiv2(){
-			window.location.href = 'Szolgaltatasok.html';
-		}
-		function progHiv3(){
-			window.location.href = 'referenciak.html';
-		}
-		function progHiv4(){
-			window.location.href = 'kapcsolat.html';
-		}
-		function progHiv5(){
-			window.location.href = 'tajekoztato.html';
-		}		
-	</script>
+    <div class="hero-actions">
+      <a href="kapcsolat.html" class="btn primary">Kapcsolatfelvétel</a>
+      <a href="Szolgaltatasok.html" class="btn secondary">Szolgáltatások</a>
+    </div>
+  </section>
+
+  <section class="card">
+    <img src="webdesign.jpg">
+
+    <div>
+      <h2>Minőség + automatizáció</h2>
+      <p>
+        Stabil, jól működő üzleti folyamatok, amelyeket szoftveres rendszerekkel automatizálok.
+      </p>
+    </div>
+  </section>
+
+  <section class="card">
+    <img src="Marketing.jpg">
+
+    <div>
+      <h2>Webalkalmazások és digitális rendszerek</h2>
+      <p>
+        Egyedi fejlesztésű weboldalak és üzleti alkalmazások IT és marketing szemlélettel.
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p><b>Tóth Gergő</b></p>
+    <p>gtoth0714@gmail.com</p>
+    <p>0630/2775197</p>
+
+    <button onclick="location.href='tajekoztato.html'">
+      Adatkezelési tájékoztató
+    </button>
+  </footer>
+
+</main>
+
 </body>
 </html>
