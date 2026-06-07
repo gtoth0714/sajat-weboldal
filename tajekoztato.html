@@ -1,88 +1,101 @@
 <!DOCTYPE html>
+<html lang="hu">
 <head>
-	<meta charset="UTF-8">
-	<title>Privacy Policy</title>
-	<link rel="stylesheet" href="style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Adatkezelési tájékoztató</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-	<div class="front">
-		<div class="actual-page">Privacy Policy</div></br>
-		<div class="menu">
-			<button class="gomb" id="gomb1" onmouseenter="changeButtonColor1('black','rgb(255,100,0)')" 
-			onmouseleave="changeButtonColor1('black','rgb(150,200,50)')" onclick="progHiv1()" >Main Page</button></br>
-			<button class="gomb" id="gomb2" onmouseenter="changeButtonColor2('black','rgb(255,100,0)')" 
-			onmouseleave="changeButtonColor2('black','rgb(150,200,50)')" onclick="progHiv2()">Services</button></br>
-			<button class="gomb" id="gomb4" onmouseenter="changeButtonColor4('black','rgb(255,100,0)')" 
-			onmouseleave="changeButtonColor4('black','rgb(150,200,50)')" onclick="progHiv4()">Contact</button></br>
-		</div>
-	</div>
-	<div class="content">
-		<div class="intro">
-			PRIVACY POLICY:
-		</div>
-		<div class="leiras1">
-			<strong>I. INTRODUCTION:</strong><br/>
-			This website is a public portfolio site. It does <strong>not collect</strong> or process any personal data from visitors.<br/><br/>
-			No cookies, tracking technologies, forms, or user registration are used. The website is static and solely for informational purposes.<br/><br/>
-			All images are either original or royalty-free. The profile photo is self-made, and others are sourced from 
-			<a href="https://unsplash.com" target="_blank">unsplash.com</a>.<br/><br/>
-		  </div>
-		<div class="leiras2">
-			<strong>II. WEBPAGE OWNER:</strong></br>
-			Name: Gergő Tóth</br>
-			Company Name: Gergő Tóth, Individual Entrepreneur</br>
-			Tax Identification Number: 91243160-2-24</br>
-			Phone number: +36 30 277 5197</br></br>
-		</div>
-		<div class="leiras7">
-			<strong>III. HOSTING INFORMATION:</strong></br>
-			This website is hosted on <strong>GitHub Pages (adjust based on your actual host).</strong></br>
-			No personal data is handled or stored by the hosting provider.<br/><br/>
-		</div>
-	</div>
-	<div class="labjegyzet">
-		Phone number: 0630/2775197</br></br>
-		E-mail: gtoth0714@gmail.com</br></br>
-		Tax number: 91243160-2-24</br></br>
-		<button onclick="progHiv5()">Privacy Policy</button>
-	</div>
-	<script>
-		function changeButtonColor1(backgroundColor, textColor){
-			var button = document.getElementById("gomb1");
-			button.style.backgroundColor = backgroundColor;
-			button.style.color = textColor;
-		}
-		function changeButtonColor2(backgroundColor, textColor){
-			var button = document.getElementById("gomb2");
-			button.style.backgroundColor = backgroundColor;
-			button.style.color = textColor;
-		}
-		function changeButtonColor3(backgroundColor, textColor){
-			var button = document.getElementById("gomb3");
-			button.style.backgroundColor = backgroundColor;
-			button.style.color = textColor;
-		}
-		function changeButtonColor4(backgroundColor, textColor){
-			var button = document.getElementById("gomb4");
-			button.style.backgroundColor = backgroundColor;
-			button.style.color = textColor;
-		}
-		function progHiv1(){
-			window.location.href = 'index.html';
-		}
-		function progHiv2(){
-			window.location.href = 'Szolgaltatasok.html';
-		}
-		function progHiv3(){
-			window.location.href = 'referenciak.html';
-		}
-		function progHiv4(){
-			window.location.href = 'kapcsolat.html';
-		}
-		function progHiv5(){
-			window.location.href = 'tajekoztato.html';
-		}		
-	</script>
+
+<header class="sidebar">
+  <div class="logo">Tóth Gergő</div>
+
+  <nav class="menu">
+    <a href="index.html" class="nav-btn">Főoldal</a>
+    <a href="Szolgaltatasok.html" class="nav-btn">Szolgáltatások</a>
+    <a href="kapcsolat.html" class="nav-btn">Kapcsolat</a>
+  </nav>
+</header>
+
+<main class="content">
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Adatkezelési tájékoztató</h1>
+    <p>Rövid összefoglaló arról, hogyan kezeli ez az oldal az adatokat.</p>
+  </section>
+
+  <!-- SECTION 1 -->
+  <section class="card">
+    <div>
+      <h2>1. Bevezetés</h2>
+
+      <p>
+        Ez az oldal egy nyilvános portfólió weboldal. A látogatók személyes adatait
+        <b>nem gyűjti, nem tárolja és nem dolgozza fel</b>.
+      </p>
+
+      <p>
+        Nem használunk űrlapokat, regisztrációt, hírlevelet vagy követési technológiákat.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="card">
+    <div>
+      <h2>2. Sütik és követés</h2>
+
+      <p>
+        Az oldal nem használ cookie-kat marketing vagy analitikai célokra.
+        Nincs Google Analytics vagy egyéb követőkód.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECTION 3 -->
+  <section class="card">
+    <div>
+      <h2>3. Tartalom és képek</h2>
+
+      <p>
+        A weboldalon található képek részben saját készítésűek, részben jogtiszta,
+        szabadon felhasználható forrásból származnak (pl. Unsplash).
+      </p>
+
+      <p>
+        <a href="https://unsplash.com" target="_blank">Unsplash</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- SECTION 4 -->
+  <section class="card">
+    <div>
+      <h2>4. Weboldal tulajdonosa</h2>
+
+      <p><b>Név:</b> Tóth Gergő</p>
+      <p><b>Telefon:</b> 0630/2775197</p>
+      <p><b>E-mail:</b> gtoth0714@gmail.com</p>
+      <p><b>Adószám:</b> 91243160-2-24</p>
+    </div>
+  </section>
+
+  <!-- SECTION 5 -->
+  <section class="card">
+    <div>
+      <h2>5. Hosting</h2>
+
+      <p>
+        Az oldal statikus tárhelyen fut (pl. GitHub Pages vagy hasonló szolgáltatás).
+        A hosting szolgáltató nem kezel felhasználói adatokat ezen az oldalon keresztül.
+      </p>
+    </div>
+  </section>
+
+</main>
+
 </body>
 </html>

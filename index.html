@@ -1,45 +1,56 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="UTF-8">
-	<title>Main Page</title>
+	<title>Főoldal</title>
 	<link rel="stylesheet" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<div class="front">
-		<div class="actual-page">Main Page</div></br>
-		<div class="menu">
-			<button class="gomb" id="gomb1" onmouseenter="changeButtonColor1('black','rgb(255,100,0)')" 
-			onmouseleave="changeButtonColor1('black','rgb(150,200,50)')" onclick="progHiv1()" >Main Page</button></br>
-			<button class="gomb" id="gomb2" onmouseenter="changeButtonColor2('black','rgb(255,100,0)')" 
-			onmouseleave="changeButtonColor2('black','rgb(150,200,50)')" onclick="progHiv2()">Services</button></br>
-			<button class="gomb" id="gomb4" onmouseenter="changeButtonColor4('black','rgb(255,100,0)')" 
-			onmouseleave="changeButtonColor4('black','rgb(150,200,50)')" onclick="progHiv4()">Contact</button></br>
-		</div>
-	</div>
-	<div class="content">
-		<div class="intro">
-			I believe a great website isn’t just beautiful — it’s clean, fast, functional, and uniquely tailored to your brand.
-		</div>
-		<div>
-			<img src="webdesign.jpg" class="pict0">
-		</div>
-		<div class="leiras1">
-			I’m passionate about delivering custom, high-end websites powered by modern tech that spark interest and inspire potential clients.
-		</div>
-		<div>
-			<img src="Marketing.jpg" class="pict0">
-		</div>
-		<div class="leiras2">
-			I provide complete website maintenance, continuous improvements, and marketing support — ready to partner with you for the long haul.
-		</div>
-	</div>
-	<div class="labjegyzet">
-		Phone number: 0630/2775197</br></br>
-		E-mail: gtoth0714@gmail.com</br></br>
-		Tax number: 91243160-2-24</br></br>
-		<button onclick="progHiv5()">Privacy Policy</button>
-	</div>
+	<header class="sidebar">
+  		<div class="logo">Tóth Gergő</div>
+
+  		<nav class="menu">
+    		<a href="index.html" class="nav-btn">Főoldal</a>
+    		<a href="Szolgaltatasok.html" class="nav-btn">Szolgáltatások</a>
+    		<a href="kapcsolat.html" class="nav-btn">Kapcsolat</a>
+  		</nav>
+	</header>
+	<main class="content">
+
+  		<section class="hero">
+    		<h1>
+      			Minőségügyi folyamatok + szoftverrendszerek<br>
+      			cégek számára
+    		</h1>
+    		<p>
+      			Segítek a vállalatoknak folyamataikat automatizált, skálázható digitális rendszerekké alakítani.
+    		</p>
+  		</section>
+
+  		<section class="card">
+    		<img src="webdesign.jpg">
+    		<div>
+      			<h2>Minőségügy + automatizáció</h2>
+      			<p>Folyamatok, amik stabilan működnek és szoftverek, amik automatizálják őket.</p>
+    		</div>
+  		</section>
+
+  		<section class="card">
+    		<img src="Marketing.jpg">
+    		<div>
+      			<h2>Webalkalmazások & digitális termékek</h2>
+      			<p>Egyedi weboldalak és alkalmazások IT és üzleti fókuszban.</p>
+    		</div>
+  		</section>
+
+  		<footer class="footer">
+    		<p>Név: Tóth Gergő</p>
+    		<p>Email: gtoth0714@gmail.com</p>
+    		<p>Telefon: 0630/2775197</p>
+    		<button onclick="location.href='tajekoztato.html'">Privacy Policy</button>
+  		</footer>
+
+	</main>
 	<script>
 		function changeButtonColor1(backgroundColor, textColor){
 			var button = document.getElementById("gomb1");
